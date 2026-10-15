@@ -1,0 +1,5 @@
+name: "pitch_deck"
+title: "Pitch Deck"
+description: "Automatically generates a hackathon pitch deck from project facts: five slides, speaker notes with timing, and a demo script."
+category: "Work and knowledge"
+include_in_prompt: true

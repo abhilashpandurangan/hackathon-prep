@@ -1,0 +1,5 @@
+name: "hackathon_playbook"
+title: "Hackathon Playbook"
+description: "Takes the user from hackathon announcement to demo day: researching the event, picking a winning build, pre-event prep, a build-day runbook, and the pitch."
+category: "Work and knowledge"
+include_in_prompt: true
