@@ -1,8 +1,13 @@
 # hackathon-prep
 
-Reusable skills for hackathons. Each skill is a self-contained playbook in
-`skills/<name>/` that an AI assistant can follow to do hackathon work well:
-preparing, building, demoing, and pitching.
+Reusable, agent-agnostic skills for hackathons. Each skill is a
+self-contained playbook in `skills/<name>/` that any AI agent can follow:
+Claude Code, Cursor, Copilot, ChatGPT, Muse, or anything else that reads
+markdown instructions.
+
+Skills follow the open `SKILL.md` convention: a single markdown file with
+`name` and `description` frontmatter, no vendor lock-in, no special tools
+required.
 
 ## Skills
 
@@ -13,21 +18,27 @@ preparing, building, demoing, and pitching.
 
 ## Install a skill
 
-Copy the skill folder into your assistant's custom skills directory:
+Point your agent at `skills/<name>/SKILL.md`, or copy the folder into your
+agent's skills directory. Examples:
 
 ```bash
-cp -r skills/hackathon-playbook ~/workspace/custom-skills/
+# Claude Code
+cp -r skills/hackathon-playbook ~/.claude/skills/
+
+# Cursor (~/.cursor/skills) or your agent's equivalent
+cp -r skills/pitch-deck <your-agent-skills-dir>/
 ```
 
-Each skill has a `SKILL.md` (the instructions) and a `skill.yaml` (its
-metadata). No dependencies, no build step.
+No dependencies, no build step. If your agent auto-discovers skills, drop
+the folder in and mention the skill by name.
 
 ## Add a new skill
 
-1. Create `skills/<skill-name>/SKILL.md` following the existing style:
-   second person, one idea per bullet, sections named for what they do.
-2. Add `skills/<skill-name>/skill.yaml` with name, title, description,
-   category, and `include_in_prompt`.
+1. Create `skills/<skill-name>/SKILL.md` with `name` and `description`
+   frontmatter, following the existing style: plain second person, one idea
+   per bullet, sections named for what they do.
+2. Keep it agent-agnostic: describe capabilities ("use web search", "open the
+   page in your browser tool"), never name one vendor's tools or paths.
 3. List it in the table above.
 
 ## Inspiration

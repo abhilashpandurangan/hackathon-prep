@@ -1,23 +1,27 @@
+---
+name: hackathon-playbook
+description: Takes you from hackathon announcement to demo day: researching the event, picking a winning build, pre-event prep, a build-day runbook, and the pitch. Use when preparing for any hackathon.
+---
+
 # Hackathon Playbook
 
-Use this skill when the user is attending, considering, or preparing for a
-hackathon. It covers the full arc: researching the event, picking a winning
-build, pre-event prep, a build-day runbook, the demo and pitch, and
-follow-up.
+Use this skill when preparing for a hackathon. It covers the full arc:
+researching the event, picking a winning build, pre-event prep, a build-day
+runbook, the demo and pitch, and follow-up. It works with any AI agent;
+adapt the tool names to whatever your agent provides.
 
 ## Research the event
 
-- Open the event page with `browser.open` and extract the date, hours,
-  venue, tracks, prizes, judging criteria, host, and sponsors. Never trust
-  memory for dates.
+- Open the event page and extract the date, hours, venue, tracks, prizes,
+  judging criteria, host, and sponsors. Never trust memory for dates.
 
 - Read the host's own product story. When the host sells an observability or
   agent platform, the winning demo usually shows that platform's loop in
   action. Build the loop into the narrative, not just the stack.
 
 - Find the track sponsors and their challenge briefs. They live on the event
-  page, Discord, Builderbase, or Devpost. Sponsor staff are often the judges,
-  so build to their brief and visit their desk early on the day.
+  page, Discord, Slack, Builderbase, or Devpost. Sponsor staff are often the
+  judges, so build to their brief and visit their desk early on the day.
 
 - Look up the previous edition of the same event. Search for winner
   announcements, Devpost galleries, and repos to learn what the judges
@@ -29,7 +33,7 @@ follow-up.
 
 ## Generate and pick the build
 
-- Research each track separately with `browser.search`. Ground every idea in
+- Research each track separately with web search. Ground every idea in
   something real and current: a fresh product launch, a published stat, an
   industry pain point with a number attached.
 
@@ -37,7 +41,7 @@ follow-up.
   why it can win, a day-build scope, and one jaw-drop moment: a single 10
   second beat the judges feel. Everything else is scaffolding for that beat.
 
-- Score ideas on four axes: fit to the user's real skills, demoability in
+- Score ideas on four axes: fit to the builder's real skills, demoability in
   the time available, strength of the quantified story, and fit to the host's
   theme. Present the ideas, then give one clear recommendation with reasons.
 
@@ -45,8 +49,8 @@ follow-up.
   clock. A rough system running early beats a brilliant system that never
   runs.
 
-- Pick a stack the user already knows. Never learn a new framework on build
-  day.
+- Pick a stack the builder already knows. Never learn a new framework on
+  build day.
 
 ## Prep before the event
 
@@ -123,21 +127,10 @@ follow-up.
 - Save what worked and what did not into the event's notes file. The next
   run of this playbook starts from those notes.
 
-## Available connectors
-
-- Use `muse.connector_search` to find other connectors and `muse.skill_search`
-  to find related skills.
-
-- If nothing here fits, look on the web for a maintained API or MCP server
-  and set it up with [Custom Connectors and
-  MCPs](/opt/muse/skills/custom-connector-setup/SKILL.md), or build a custom
-  connector.
-
-## Websites
+## Useful websites
 
 - [Luma](https://luma.com/) for event pages, schedules, and registration
-  status. Carry the event URL into any browser task and verify the date and
-  venue there.
+  status. Verify the date and venue on the event page itself.
 
 - [Devpost](https://devpost.com/) for past hackathon galleries, winning
   projects, and judging criteria. Good for researching what judges rewarded.

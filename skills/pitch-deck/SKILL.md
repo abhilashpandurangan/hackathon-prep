@@ -1,9 +1,14 @@
+---
+name: pitch-deck
+description: Automatically generates a hackathon pitch deck from project facts: five slides, speaker notes with timing, and a demo script. Use when a hackathon build needs a pitch deck.
+---
+
 # Pitch Deck
 
-Use this skill when the user needs a hackathon pitch deck built
-automatically from their project facts. Given a project name, the problem,
-the demo beats, and the numbers, it produces a 5-slide deck plus speaker
-notes and a timed demo script, ready to present.
+Use this skill when a hackathon build needs a pitch deck. Given a project
+name, the problem, the demo beats, and the numbers, it produces a 5-slide
+deck plus speaker notes and a timed demo script, ready to present. It works
+with any AI agent; adapt the tool names to whatever your agent provides.
 
 ## Gather the inputs
 
@@ -11,8 +16,8 @@ notes and a timed demo script, ready to present.
   and one-liner, the problem with one sourced number, the three demo beats
   in order, the quantified result, the vision and ask, and the team.
 
-- If the user gives you a repo, read its README first and draft the facts
-  yourself. Present the draft for correction instead of interrogating them.
+- If given a repo, read its README first and draft the facts yourself.
+  Present the draft for correction instead of interrogating the builder.
 
 - Never invent numbers. If a metric is missing, mark the slide "TBD" and
   keep going. A deck with one honest gap beats a deck with one invented
@@ -39,9 +44,9 @@ notes and a timed demo script, ready to present.
 
 ## Generate the deck
 
-- Build the deck with the [documents](/opt/muse/skills/documents/SKILL.md)
-  skill for an editable PowerPoint or Google Slides file, or as a web
-  artifact when the user wants to present from a link.
+- Build the deck with the agent's document or presentation capability into
+  an editable slide file (PowerPoint, Google Slides, or equivalent), or as a
+  hosted web page when presenting from a link is preferred.
 
 - Keep every slide under 25 words of body text. If a slide needs more
   words, the idea is not sharp enough yet. Say so and sharpen it before
