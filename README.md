@@ -16,6 +16,11 @@ required.
 | `hackathon-playbook` | The full arc: researching the event, picking a winning build, pre-event prep, a build-day runbook, the demo, and follow-up. |
 | `pitch-deck` | Automatically generates a hackathon pitch deck from your project facts: 5 slides, speaker notes, and a demo script. |
 | `agent-starter` | Generates a minimal working starter for an agentic app: ADK, LangGraph, or RAG, each with a simple chat UI. |
+| `devpost-submission` | Generates a complete, paste-ready Devpost submission packet from the project repo, plus a pre-submit audit against the event's rules. |
+| `demo-video` | Generates a timed, shot-by-shot demo video script with spoken voiceover lines, a recording checklist, and export and upload specs. |
+| `repo-polish` | Audits and rewrites the project README for judge scan-reading, generates the architecture diagram from the actual code, and enforces repo hygiene. |
+| `judge-qa` | Generates a judge Q&A bank from the event rubric and the project, with drafted answers and backup-slide content for the hard questions. |
+| `sponsor-tracks` | Maps the event's sponsor tracks, prizes, and APIs into a prize matrix and shows which sponsor bounties the build qualifies for. |
 
 ## Starter templates
 

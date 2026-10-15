@@ -68,6 +68,20 @@ with any AI agent; adapt the tool names to whatever your agent provides.
 - Rehearse the script twice against the clock before calling the deck done.
   Cut a beat if it runs long. Never add a slide to fix a timing problem.
 
+## External plugins and skills
+
+- If your agent has a plugin marketplace, look for slide-generation or
+  presentation plugins (search "slides" or "presentation") and install one
+  before generating. Otherwise the agent's document capability plus the
+  structure in this skill is the whole workflow.
+
+- For the architecture appendix slide, the `repo-polish` skill in this repo
+  generates the Mermaid diagram from the actual code. Run it first when the
+  diagram matters.
+
+- Pair with the `demo-video` skill in this repo: the deck's demo beats and
+  the video script share the same three beats, so write them once and reuse.
+
 ## Alternatives for better results
 
 - When judges score heavily on technical depth, add one appendix slide with

@@ -55,6 +55,28 @@ whatever your agent provides.
 - For the RAG template, the first real upgrade is a better chunking strategy
   in the marked function, not a bigger model.
 
+## External plugins and skills
+
+- ADK template: the official repo at
+  https://github.com/google/adk-python ships runnable samples and publishes
+  its docs as llms.txt at https://adk.dev for LLM context. Install with
+  `pip install google-adk`. If your agent has a plugin marketplace, check
+  for Google Cloud or Gemini plugins to speed up the setup.
+
+- LangGraph template: the official repo at
+  https://github.com/langchain-ai/langgraph, docs at
+  https://docs.langchain.com, and the free LangChain Academy course for the
+  concepts. LangSmith adds tracing and evals when the agent needs
+  observability. Install with `pip install langgraph`.
+
+- RAG template: `pip install chromadb` runs the vector store locally with
+  no server. For bigger document sets, look at the chunking and embedding
+  options in the ChromaDB documentation before changing the model.
+
+- UI: everything here builds on Streamlit (`pip install streamlit`). Its
+  component gallery covers charts, maps, and chat widgets when the starter
+  UI needs to grow.
+
 ## What not to do
 
 - Do not add authentication, databases, or deployment config to a starter.

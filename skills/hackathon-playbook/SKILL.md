@@ -127,6 +127,22 @@ adapt the tool names to whatever your agent provides.
 - Save what worked and what did not into the event's notes file. The next
   run of this playbook starts from those notes.
 
+## External plugins and skills
+
+- If your agent has a plugin marketplace, install a web-research helper for
+  the event-research step and a repo-scaffolding helper for the prep step.
+  Otherwise the built-in web search and file tools cover everything here.
+
+- Prefer official sources over summaries: the event's own page, Devpost
+  event pages, and the host's documentation. Verify every link loads before
+  citing it.
+
+- Pair with the other skills in this repo: `agent-starter` for the build
+  scaffold, `pitch-deck` for the deck, `demo-video` for the video script,
+  `devpost-submission` for the submission packet, `repo-polish` before
+  judging, `judge-qa` the night before demos, and `sponsor-tracks` early to
+  aim at bounties.
+
 ## Useful websites
 
 - [Luma](https://luma.com/) for event pages, schedules, and registration
