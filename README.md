@@ -15,6 +15,15 @@ required.
 |---|---|
 | `hackathon-playbook` | The full arc: researching the event, picking a winning build, pre-event prep, a build-day runbook, the demo, and follow-up. |
 | `pitch-deck` | Automatically generates a hackathon pitch deck from your project facts: 5 slides, speaker notes, and a demo script. |
+| `agent-starter` | Generates a minimal working starter for an agentic app: ADK, LangGraph, or RAG, each with a simple chat UI. |
+
+## Starter templates
+
+Runnable starting points in `templates/`, each with its own README:
+
+- `templates/adk-starter/` — Google ADK agent + Streamlit chat UI
+- `templates/langgraph-starter/` — LangGraph ReAct agent + Streamlit chat UI
+- `templates/rag-starter/` — local ChromaDB RAG + Streamlit UI (works with no API key; generated answers when `OPENAI_API_KEY` is set)
 
 ## Install a skill
 
