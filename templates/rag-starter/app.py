@@ -102,5 +102,8 @@ if query:
 
 st.sidebar.write(f"Chunks in store: {get_collection().count()}")
 if st.sidebar.button("Clear all documents"):
-    get_collection().delete(where={})
+    coll = get_collection()
+    ids = coll.get()["ids"]
+    if ids:
+        coll.delete(ids=ids)
     st.rerun()
